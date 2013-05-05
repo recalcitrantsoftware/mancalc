@@ -1,4 +1,4 @@
-![Man Calc Logo](http://recalcitrantsoftware.com/mancalc/logo.png)
+[![Man Calc Logo](http://recalcitrantsoftware.com/mancalc/logo.png)](http://recalcitrantsoftware.com/mancalc/)
 =======
 
 Man Calc (manual calculator) is a stack-based calculator for
