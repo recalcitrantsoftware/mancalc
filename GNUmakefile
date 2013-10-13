@@ -33,7 +33,7 @@ pd := .postdepend.sh
  $(o)
 
 $(prog)\
-:.main.o $(addsuffix .passed,$(t)) libtestables.a\
+:.main.o $(addsuffix .passed,$(t)) libtestables.a docs\
 ;$(l) -o $@ $< -L. -ltestables
 
 libtestables.a\
@@ -73,7 +73,15 @@ libtestables.a\
 
 .PHONY\
 :clean\
- install
+ install\
+ docs
+
+docs\
+:.doxygen.out\
+
+.doxygen.out\
+:Doxyfile $(wildcard *.md) $(wildcard *.?pp)\
+;doxygen > $@ 2>&1
 
 install\
 :$(prog)\
@@ -81,7 +89,7 @@ install\
 
 clean\
 :\
-;rm -Rf $(prog) .test-* .*.o .*.d .*.passed html latex .postdepend.sh libtestables.a
+;rm -Rf $(prog) .test-* .*.o .*.d .*.passed html latex .postdepend.sh libtestables.a .doxygen.out
 
 .postdepend.sh\
 :$(MAKEFILE_LIST)\

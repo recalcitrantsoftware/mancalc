@@ -5,3 +5,7 @@ libtestables.a
 .*.sh
 engine
 cscope.*
+html
+latex
+mancalc
+.doxygen.out
