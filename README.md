@@ -1,6 +1,9 @@
 [![Man Calc Logo](http://recalcitrantsoftware.com/mancalc/logo.png)](http://recalcitrantsoftware.com/mancalc/)
 =======
 
+NEWS! Man Calc is now open source! see LICENSE.md for more
+information.
+
 Man Calc (manual calculator) is a stack-based calculator for
 iOS that can deal with very large or very small numbers
 (around 1000 decimal places of precision), and supports both
