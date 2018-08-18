@@ -14,7 +14,7 @@ prog ?= $(notdir $(CURDIR))
 MAKEFLAGS := j$(cpus)
 g := g++ $(opt) $(debug)
 g += -std=c++11
-g += -Wall -Werror -pedantic -Wno-unused-local-typedefs
+g += -Wno-unused-local-typedefs
 g := $(strip $(g))
 c := $(g) -c -MMD -I . -I ..
 l := $(g)

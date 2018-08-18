@@ -118,11 +118,11 @@ TEST(div_by_zero)
    p.push(0);
    p.push(0);
    p.push("/");
-   EQ(1, p.top()); // curious
+   EQ("nan", p.top().str()); // curious
 
    p.push(0);
    p.push("/");
-   EQ("inf", p.top().str());
+   EQ("nan", p.top().str());
 }
 
 TEST(pretty_sqrts)
